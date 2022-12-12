@@ -13,7 +13,7 @@ export const calculateBarPercentage = (goal : number, raisedAmount : number) => 
 };
 
 
-export const checkIfImage = (url : string, callback: any) => {
+export const checkIfImage = (url : string, callback: (exists:boolean) => void) => {
   const img = new Image();
   img.src = url;
 
